@@ -1,0 +1,22 @@
+.itemIMG{
+	max-width: 700px;
+}
+.item_decription{
+	max-width: 300px;
+}
+.op{
+	padding: 150px 0;
+	display: flex;
+	align-items: center;
+}
+#num{
+	border: none;
+	padding: 15px 30px;
+	background-color: #7fc7ff;
+}
+#plus{
+	margin-right: 5px;
+}
+#num:hover{
+	background-color: #4db2ff;
+}

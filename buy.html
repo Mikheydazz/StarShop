@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/buy.css">
+	<link rel="stylesheet" type="text/css" href="css/accordion.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Покупка</title>
+	<link rel="stylesheet" href="css/itc-slider.css">
+</head>
+<body>
+
+	<header class="header_shop">
+		<nav class="container_shop MainMenu">
+			<button class="menu_btn txt" id="btnMenu" onclick="bMenu()">Меню</button>
+			<h2 class="tytle_store">
+				<img src="image/Honkai.png" class="Main_img">
+			</h2>
+			<ul class="main_menu">
+				<li class="main_menu_item"><a class="mainLink" href="#tovar"><p class='txtm'>Товар</p></a></li>
+				<li class="main_menu_item"><a class="mainLink" href="#cena"><p class='txtm'>Цена</p></a></li>
+				<li class="main_menu_item"><a class="mainLink" href="#karta"><p class='txtm'>Точки самовывоза</p></a></li>
+			</ul>
+			<button class="burger">
+				<div class="burger_item"></div>
+				<div class="burger_item"></div>
+				<div class="burger_item"></div>
+			</button>
+		</nav>
+		<div class="container_shop menu_container">
+	
+		<div class="shop_menu" id="menu">
+			<ul class="menu_list">
+				<li class="menuItem"><a class="menuLink" href="#"><p class="txtm">Вход</p></a></li>
+				<li class="menuItem"><a class="menuLink" href="#"><p class="txtm">Корзина</p></a></li>
+				<li class="menuItem"><a class="menuLink" href="#"><p class="txtm">Акции</p></a></li>
+				<li class="menuItem"><a class="menuLink" href="#"><p class="txtm">Реклама</p></a></li>
+				<li class="menuItem">
+					<div class="theme">
+						<h2 class="theme_tytle txtm1">
+							Смена темы
+						</h2>
+						<ul class="theme_list">
+							<!-- <li class="theme_item"><div class="theme_light"></div></li> -->
+							<li class="theme_item"><div class="theme_dark" id="choise"></div></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</header>
+
+<main>
+	<div class="container_shop op">
+		<div class="item_decription">
+		<img src="image/nefrit.png" class="itemIMG">
+		<p class="desc_txt txt"><b>Звёздный нефрит</b> — особая валюта в Honkai: Star Rail. Предназначен для покупки особого или обычного звёздного пропуска.</p>
+		<button class="num" id="num">Купить</button>
+		</div>
+		<div class="add_buttons">
+		<button class="plus count" id="plus">+</button>
+		<button class="minus count" id="minus">-</button>
+		</div>
+	</div>
+</main>
+
+	<footer class="footer">
+		<p class="footer_txt title_shop">&copy Все права защищены</p>
+	</footer>
+	<script type="text/javascript" src="js/player.js"></script>
+	<script type="text/javascript" src="js/burger.js"></script>
+	<script type="text/javascript" src="js/button.js"></script>
+	<script type="text/javascript" src="js/changeTheme.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/add.js"></script>
+	<script type="text/javascript" src="js/accordion.js"></script>
+	<script src="js/itc-slider.js" defer></script>
+</body>
+</html>

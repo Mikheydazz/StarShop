@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/accordion.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Магазин</title>
+	<link rel="stylesheet" href="css/itc-slider.css">
+</head>
+<body>
+
+	<header class="header_shop">
+		<nav class="container_shop MainMenu">
+			<button class="menu_btn txt" id="btnMenu" onclick="bMenu()">Меню</button>
+			<h2 class="tytle_store">
+				<img src="image/Honkai.png" class="Main_img">
+			</h2>
+			<ul class="main_menu">
+				<li class="main_menu_item"><a class="mainLink" href="#tovar"><p class='txtm'>Товар</p></a></li>
+				<li class="main_menu_item"><a class="mainLink" href="#cena"><p class='txtm'>Цена</p></a></li>
+				<li class="main_menu_item"><a class="mainLink" href="#karta"><p class='txtm'>Точки самовывоза</p></a></li>
+			</ul>
+			<button class="burger">
+				<div class="burger_item"></div>
+				<div class="burger_item"></div>
+				<div class="burger_item"></div>
+			</button>
+		</nav>
+		<div class="container_shop menu_container">
+	
+		<div class="shop_menu" id="menu">
+			<ul class="menu_list">
+				<li class="menuItem"><a class="menuLink" href="#"><p class="txtm">Вход</p></a></li>
+				<li class="menuItem"><a class="menuLink" href="basket.html"><p class="txtm">Корзина</p></a></li>
+				<li class="menuItem"><a class="menuLink" href="#"><p class="txtm">Акции</p></a></li>
+				<li class="menuItem"><a class="menuLink" href="#"><p class="txtm">Реклама</p></a></li>
+				<li class="menuItem">
+					<div class="theme">
+						<h2 class="theme_tytle txtm1">
+							Смена темы
+						</h2>
+						<ul class="theme_list">
+							<!-- <li class="theme_item"><div class="theme_light"></div></li> -->
+							<li class="theme_item"><div class="theme_dark" id="choise"></div></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="video">
+			<video id="video" autoplay loop muted><source src="video/video.mp4"></video>
+			<div class="video_content container_shop">
+				<div class="Honkai">
+					<h2 class="title_shop bg"> Honkai: Star Rail</h2>
+					<p class="txt bg"><b>Honkai: Star Rail</b> — бесплатная видеоигра в жанре космическое фэнтези с элементами RPG и с закрытым миром, а также системой монетизации гача. Игра разработана и издана HoYoverse. Это четвертая часть серии Хонкай, в которой используются совершенно новые персонажи, а также альтернативные версии существующих персонажей из Honkai Impact 3rd.</p>
+				</div>
+				<img src="image/Honkai.png" class="videoIMG">
+			</div>
+		</section>
+
+		<section class="shop">
+			
+			<div class="container_shop">
+				<h1 class="title_shop" id="tovar">Звёздный нефрит</h1>
+				<img src="image/nefrit.png" class="nefrit">
+		<!-- 		<div class="accordion" id="accordion-1">
+  <div class="accordion__item">
+    <div class="accordion__header">
+      <h2 class="title_shop about">О товаре</h2>
+    </div>
+    <div class="accordion__body">
+      <p class="text_shop txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Предназначен для покупки особого или обычного звёздного пропуска.</p>
+    </div>
+  </div>
+  <div class="accordion__item">
+    <div class="accordion__header">
+      <h2 class="title_shop about">Не о товаре</h2>
+    </div>
+    <div class="accordion__body">
+      <p class="text_shop txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Предназначен для покупки особого или обычного звёздного пропуска.</p>
+    </div>
+  </div>
+</div> -->
+				<h2 class="price" id="cena">Цена</h2>
+				<p class="price_value txt" id="price">2099 ₽</p>
+				<button id="btn" onclick="buyItem()" class="buy_button txt">КУПИТЬ</button>
+			</div>
+
+		</section>
+
+		<section class="slider_section">
+			<div class="itc-slider container_slider" data-slider="itc-slider">
+		  <div class="itc-slider-wrapper">
+		    <div class="itc-slider-items">
+		      <div class="itc-slider-item">
+		        <!-- Контент 1 слайда -->
+		        <img src="image/silver.png" class="lightzoom">
+		      </div>
+		      <div class="itc-slider-item">
+		        <!-- Контент 2 слайда -->
+		        <img src="image/gold.png" class="lightzoom">
+		      </div>
+		      <div class="itc-slider-item">
+		        <!-- Контент 3 слайда -->
+		        <img src="image/son.png" class="lightzoom">
+		      </div>
+		    </div>
+		  </div>
+		  <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+		  <button class="itc-slider-btn itc-slider-btn-prev"></button>
+		  <button class="itc-slider-btn itc-slider-btn-next"></button>
+			</div>
+		</section>
+		<section class="maps">
+			<div class="container_shop">
+				<h2 class="maps_tytle price" id="karta">
+					Точки самовывоза
+				</h2>
+				<div class="google">
+					<h3 class="tytle_google txt">
+						Гугл карта
+					</h3>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1115.7045081641963!2d92.9665829668041!3d55.994267551940816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd7a54dd38e09e9%3A0x8936485585f1d522!2sWildberries!5e0!3m2!1sru!2sru!4v1687166538468!5m2!1sru!2sru" width="100%" height="600px" style="border:2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="googleMap"></iframe>
+				</div>
+				<div class="yandex">
+					<h3 class="tytle_yandex txt">
+						Яндекс карта
+					</h3>
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aae58cc9af6ad3d0861c5af685161733e92a97436144b6f437ad93640503611fa&amp;source=constructor" width="100%" height="600" frameborder="0"></iframe>
+				</div>
+			</div>
+		</section>
+		<section class="video_player">
+			<div class="player">
+
+				<button class="back player_btn" id="back"><p class="txt">Назад</p></button>
+				<button class="next player_btn" id="next"><p class="txt">Далее</p></button>
+
+
+			<video class="player_item" id="video1" controls width="33%"><source src="video/video.mp4" type=""></video>
+			<video class="player_item" id="video2" controls width="33%"><source src="video/loucha.mp4" type=""></video>
+			<video class="player_item" id="video3" controls width="33%"><source src="video/wolf.mp4" type=""></video>
+
+
+			</div>
+		</section>
+
+		<div class="basket">
+			<button class="basket_btn"><a href="basket.html"><img class="button_img" src="image/bascket.png"></a></button>
+			<p class="price_basket txt" id="priceBSK">Корзина 0₽</p>
+		</div>
+
+		</main>
+		<footer class="footer">
+		<p class="footer_txt title_shop">&copy Все права защищены</p>
+		</footer>
+		<script type="text/javascript" src="js/player.js"></script>
+		<script type="text/javascript" src="js/burger.js"></script>
+		<script type="text/javascript" src="js/button.js"></script>
+		<script type="text/javascript" src="js/changeTheme.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/accordion.js"></script>
+		<script src="js/itc-slider.js" defer></script>
+	</body>
+</html>
